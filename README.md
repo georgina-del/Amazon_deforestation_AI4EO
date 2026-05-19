@@ -110,6 +110,9 @@ Rondônia shows clear evidence of active deforestation between 2020 and 2024, wi
 * Secondary Forest decreased by 53%
 * Mature plantation/degraded forest decreased by 42 % suggests land that was already used for agriculture may have been abandoned or reclassified.
 
+![Rondonia Land Cover Change](images/rondonia_land_cover_change.png)
+*Figure 1: Land cover change analysis for Rondônia, Brazil (2020–2024)*
+
 
 **Para Results**
 
