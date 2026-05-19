@@ -63,7 +63,7 @@ Rather than clustering on raw spectral bands, four vegetation indices were calcu
 
 NDVI (Normalised Difference Vegetation Index) — the primary forest cover indicator
 
-EVI (Enhanced Vegetation Index) — preferred over NDVI in dense tropical forest where NDVI saturates, calculated as
+EVI (Enhanced Vegetation Index) — preferred over NDVI in dense tropical forest where NDVI saturates
 
 SAVI (Soil Adjusted Vegetation Index) — reduces soil background effects in recently cleared areas
 
