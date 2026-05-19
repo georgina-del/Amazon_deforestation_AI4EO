@@ -103,6 +103,8 @@ Deforestation metrics were derived by comparing pixel counts between 2020 and 20
 
 **Rondonia Results**
 
+Rondônia shows clear evidence of active deforestation between 2020 and 2024, with dramatic increases in recently cleared land consistent with the rapid agricultural expansion this region is known for.
+
 * Achieved a silhouette score of 0.383 which shows that K-means found some distinct groups however there is overlap between neighbouring land types.
 * Bare/recently cleared land increased by 184 % from 2020 to 2024
 * Secondary Forest decreased by 53%
@@ -110,6 +112,8 @@ Deforestation metrics were derived by comparing pixel counts between 2020 and 20
 
 
 **Para Results**
+
+Pará tells a different story to Rondônia, rather than active clearing, the results suggest a more advanced stage of land conversion where previously cleared areas are transitioning into established agriculture.
 
 * Only 596 pixels were used compared to 1298 in Rondonia most likely due to cloud masking removing pixels
 * Higher silhouette score of 0.476, suggests clusters are more distinct
@@ -124,4 +128,17 @@ Deforestation metrics were derived by comparing pixel counts between 2020 and 20
 ## Environment Impact Assesment 
 
 
-## Limitations and Future Work 
+## Limitations 
+
+* **Oversimplication of landscapes** K-means partitions data into spherical clusters, however real land cover types don't naturally form spherical clusters. The model only uses four vegetation indices.
+* **Sample size and cloud cover** the study relies on 2000 pixels due to computational limitations and with cloud cover even less, however it may not be representative of deforestation trends across an entire region.
+* **Seasonal Mismatch** if the 2020 and 2024 images were acquired in different seasons, some NDVI differences between years may reflect seasonal vegetation change rather than permanent land cover change.
+* **No uncertainty quantification** K-means assigns Pixels sitting on the boundary between two clusters get assigned just as confidently as pixels sitting firmly in the centre of a cluster.
+
+## Future work
+
+Some ideas for future work to improve the model:
+
+* **Compare with supervised approaches** this would directly quantify what is gained by adding ground truth labels
+* **Try alternative clustering algorithms** Gaussian Mixture Models would address the spherical cluster assumption by allowing clusters of different shapes and sizes.
+* **Multi-temporal compositing** using a seasonal median composite rather than a single image would reduce noise from atmospheric effects and produce more stable vegetation index values for clustering.
