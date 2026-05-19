@@ -101,6 +101,23 @@ Deforestation metrics were derived by comparing pixel counts between 2020 and 20
 
 ## Results and Performance
 
+**Rondonia Results**
+
+* Achieved a silhouette score of 0.383 which shows that K-means found some distinct groups however there is overlap between neighbouring land types.
+* Bare/recently cleared land increased by 184 % from 2020 to 2024
+* Secondary Forest decreased by 53%
+* Mature plantation/degraded forest decreased by 42 % suggests land that was already used for agriculture may have been abandoned or reclassified.
+
+
+**Para Results**
+
+* Only 596 pixels were used compared to 1298 in Rondonia most likely due to cloud masking removing pixels
+* Higher silhouette score of 0.476, suggests clusters are more distinct
+* Degraded/Mature forest increased by 30% suggests forest converted to agricultural land
+* Mature plantation/degraded forest increased by 29% suggests young plantations have matured since 2020
+* Secondary forest dereased by 17%
+* No primary forest cluster appears
+
 ## Key Findings
 
 
