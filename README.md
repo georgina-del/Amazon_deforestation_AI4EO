@@ -52,6 +52,52 @@ Brazil was selected as the study country as it contains the largest area of trop
 
 ## Methodology 
 
+**Cloud Masking**
+
+A cloud masking function was applied to all images using Sentinel-2's Scene Classification Layer (SCL). Pixels classified as cloud shadow (class 3), medium probability cloud (class 8), high probability cloud (class 9), and cirrus (class 10) were excluded. A deliberately lenient masking strategy was adopted to retain maximum usable pixels in the frequently cloudy equatorial environment, removing only the most obvious atmospheric contamination.
+
+
+**Vegetation Index Calculation**
+
+Rather than clustering on raw spectral bands, four vegetation indices were calculated from the Sentinel-2 bands to form the feature space for K-means (Huete et al., 2002). This improves physical interpretability of the resulting clusters and reduces sensitivity to illumination differences between the 2020 and 2024 acquisitions
+
+NDVI (Normalised Difference Vegetation Index) — the primary forest cover indicator
+
+EVI (Enhanced Vegetation Index) — preferred over NDVI in dense tropical forest where NDVI saturates, calculated as
+
+SAVI (Soil Adjusted Vegetation Index) — reduces soil background effects in recently cleared areas
+
+NDMI (Normalised Difference Moisture Index) — captures vegetation water content, distinguishing stressed or degraded forest from healthy canopy
+
+​
+**Training Data Extraction**
+
+2,000 random pixels were sampled from each study region at 30 m resolution using GEE's .sample() method. Both years were combined into a single image before sampling, ensuring each pixel row contains co-located vegetation index values from both 2020 and 2024 at the exact same geographic location. A fixed random seed (seed=42) was used throughout to ensure reproducibility.
+
+**K-Means Clustering**
+
+The notebook utilizes an unsupervised machine learning algorithm called **"k-means clustering"** , this algorithm that groups data into K clusters by assigning unlabelled data points to the nearest centroid (cluster centre). Here we apply this to the four vegetation indices to classify land cover types without requiring labelled training data. 
+
+**Optimal cluster selection** was determined objectively using silhouette analysis, testing k = 5, 6 and 7 clusters. The silhouette score measures how similar each pixel is to its own cluster compared to neighbouring clusters, ranging from -1 to +1 where higher values indicate better-separated clusters. The k value producing the highest silhouette score was selected — k=7 for Rondônia (silhouette = 0.437) and k=5 for Pará (silhouette = 0.312).
+
+**Temporal consistency** was ensured by training the K-means model exclusively on 2020 data and applying the same fitted model to both years. This is a critical methodological decision, if the model were retrained on 2024 data independently, the cluster boundaries would shift and any differences in pixel counts could reflect algorithmic variation rather than genuine land cover change. Therefore, all changes in pixel counts between years reflect real land cover transitions.
+
+**Land Cover Label Assignment**
+
+Land cover labels were assigned to clusters based on their centroid NDVI value using thresholds adapted from the course methodology (Tsamados and Chen, 2022).
+
+| Land Cover Type | NDVI Range |
+|---|---|
+| Water / Shadow | < 0.1 |
+| Bare / Recently Cleared | 0.1 – 0.35 |
+| Degraded / Young Plantation | 0.35 – 0.55 |
+| Mature Plantation / Degraded Forest | 0.55 – 0.70 |
+| Secondary Forest | 0.70 – 0.85 |
+| Primary Forest | > 0.85 |
+
+**Change Detection**
+
+Deforestation metrics were derived by comparing pixel counts between 2020 and 2024 for each land cover type. Three key indicators were calculated: total forest loss (decrease in Primary and Secondary Forest pixels), new clearing (increase in Bare/Recently Cleared pixels), and plantation expansion (increase in plantation category pixels). An annualised deforestation rate was calculated by dividing total forest loss as a percentage of total pixels by the four year study period.
 
 ## Results and Performance
 
