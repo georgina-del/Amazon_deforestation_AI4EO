@@ -125,7 +125,8 @@ Pará tells a different story to Rondônia, rather than active clearing, the res
 * Secondary forest dereased by 17%
 * No primary forest cluster appears
 
-
+![Para Land Cover Change](images/para_land_cover_change-2.png)
+*Figure 1: Land cover change analysis for Para, Brazil (2020–2024)*
 
 
 ## Environment Impact Assesment 
