@@ -118,7 +118,7 @@ Deforestation metrics were derived by comparing pixel counts between 2020 and 20
 * Secondary forest dereased by 17%
 * No primary forest cluster appears
 
-## Key Findings
+
 
 
 ## Environment Impact Assesment 
