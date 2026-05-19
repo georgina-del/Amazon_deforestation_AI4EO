@@ -23,20 +23,30 @@ Brazil was selected as the study country as it contains the largest area of trop
 **Sentinel-2 Satellite Images of Cacoal, Rondônia, Brazil**
 
 **Location:** Central Rondônia deforestation hotspot
+
 **Coordinates:** 11.45° S, 61.1° W
+
 **Bounding box:** [-61.3, -11.6, -60.9, -11.3]
+
 **Characteristics:** Rondônia is located in Western Brazil, it is characterised by the distinctive fishbone deforestation pattern where agricultural clearings branch off road networks into intact forest and records among the highest deforestation rates in Brazil (Ferraz, Vettorazzi and Theobald, 2009)
+
 **Image 1 (Baseline):** 2020 dry season
+
 **Image 2 (Recent):** 2024 dry season
 
 
 **Sentinel-2 Satellite Images of Altamira, Pará, Brazil**
 
 **Location:** Altamira municipality, southern Pará
+
 **Coordinates:** 3.65° S, 52.2° W
+
 **Bounding box:** [-52.4, -3.8, -52.0, -3.5]
+
 **Characteristics:** Pará is the second largest state in Brazil and is consistently identified as one of the most deforested municipalities in the entire Amazon basin (Ferraz, Vettorazzi and Theobald, 2009). The region sits on an active agricultural frontier where primary forest is being converted to cattle pasture and smallholder agriculture at high rates. 
+
 **Image 1 (Baseline):** 2020 dry season
+
 **Image 2 (Recent):** 2024 dry season
 
 
