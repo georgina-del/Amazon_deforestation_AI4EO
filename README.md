@@ -133,6 +133,24 @@ Pará tells a different story to Rondônia, rather than active clearing, the res
 
 ## Environment Impact Assesment 
 
+| Stage | Runtime | Energy (Wh) | CO₂e (g) | Notes |
+|---|---|---|---|---|
+| Setup & Authentication | ~40 sec | 0.22 | 0.05 | Package loading + GEE connection |
+| Data Acquisition & Processing | ~15 sec | 0.08 | 0.019 | Image filtering, cloud masking, manual selection, pixel sampling |
+| K-means Training & Analysis | ~30 sec | 0.17 | 0.039 | Silhouette analysis, clustering, visualisation |
+| **Total** | **~85 sec** | **~0.47** | **~0.11** | CPU only, no GPU |
+
+**Assumptions:**
+
+1. While the Colab notebook is running, the CPU is assumed to consume about 20 watts. This is  a reasonable estimated average for lightweight Colab CPU computation (Patterson et al., 2021).
+
+2. Assumes every 1 kilowatt-hour of electricity used from the UK grid, about 0.233 kilograms of CO₂ equivalent emissions are produced on average (Department for Business, Energy & Industrial Strategy, 2013).
+
+3. However emissions may be overestimated because Google’s infrastructure is designed to reduce or offset carbon emissions (Google, 2024).
+
+**Envrionmental Benefits**
+
+This project produces just 0.11 g CO₂e for the entire analysis. By contrast, a traditional field-based study would require a return flight from the UK to Brazil emitting approximately 870 kg CO₂e per researcher (ICAO, 2025), with helicopter surveys adding a further 500 kg CO₂e per hour (Flights for the Future, no date), over 1,370 kg CO₂e in total. This satellite-based approach therefore produces billions of times less carbon than equivalent fieldwork, demonstrates that AI-driven Earth observation is not only a powerful monitoring tool but an overwhelmingly more sustainable alternative. 
 
 ## Limitations 
 
