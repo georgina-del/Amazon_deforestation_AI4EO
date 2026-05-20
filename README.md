@@ -1,4 +1,4 @@
-# Detecting Deforestation in the Amazon Regions of Para and Rondonia Using K-means Unsupervised Learning 
+# Detection of Amazon Deforestation using K-Means Unsupervised Learning
 
 ## Table of contents
 
@@ -174,3 +174,19 @@ Some ideas for future work to improve the model:
 * **Compare with supervised approaches** this would directly quantify what is gained by adding ground truth labels
 * **Try alternative clustering algorithms** Gaussian Mixture Models would address the spherical cluster assumption by allowing clusters of different shapes and sizes.
 * **Multi-temporal compositing** using a seasonal median composite rather than a single image would reduce noise from atmospheric effects and produce more stable vegetation index values for clustering.
+
+## References 
+
+1. Borma, L. S., Nobre, C. A. and Cardoso, M. F. (2013). ‘Response of the Amazon Tropical Forests to Deforestation, Climate, and Extremes, and the Occurrence of Drought and Fire’. Climate Vulnerability, 2, pp. 153–163. doi: https://doi.org/10.1016/b978-0-12-384703-4.00228-8.
+2. CDSE. (2023). Sentinel-2. Copernicus Data Space Ecosystem. Available at: https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-2.
+3. Department for Business, Energy & Industrial Strategy. (2013). Government emission conversion factors for greenhouse gas company reporting. GOV.UK. Available at: https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting.
+4. Ferraz, S. F. de B., Vettorazzi, C. A. and Theobald, D. M. (2009). ‘Using indicators of deforestation and land-use dynamics to support conservation strategies: A case study of central Rondônia, Brazil’. Forest Ecology and Management, 257 (7), pp. 1586–1595. doi: https://doi.org/10.1016/j.foreco.2009.01.013.
+5. Ferreira, A. (2026). ‘Amazon deforestation: Drivers, damages, and policies’. Land Use Policy, 160, p. 107810. doi: https://doi.org/10.1016/j.landusepol.2025.107810.
+6. Flightsfortheirfuture. (no date). Travel & Emissions. Flights for Their Future. Available at: https://flightsfortheirfuture.com/travel-emissions/.
+7. Google. (2024). Operating sustainably – Google Data Centers. Google Data Centers. Available at: https://datacenters.google/operating-sustainably/.
+8. Greenpeace. (2020). Amazon rainforest | Greenpeace UK. Greenpeace UK. Available at: https://www.greenpeace.org.uk/challenges/forests/amazon-rainforest/.
+9. Huete, A., Didan, K., Miura, T., Rodriguez, E. P., Gao, X. and Ferreira, L. G. (2002). ‘Overview of the radiometric and biophysical performance of the MODIS vegetation indices’. Remote Sensing of Environment, 83 (1-2), pp. 195–213. doi: https://doi.org/10.1016/s0034-4257(02)00096-2.
+10. ICEC. (2025). ICAO Carbon Emissions Calculator. Icao.int. Available at: https://icec.icao.int/calculator.
+11. Patterson, D. A., Gonzalez, J. E., Le, Q. V., Liang, C., Lluís-Miquel Munguía, Rothchild, D., So, D. R., Texier, M. and Dean, J. (2021). ‘Carbon Emissions and Large Neural Network Training’. arXiv. doi: https://doi.org/10.48550/arxiv.2104.10350.
+12. Santos, Tarcio Rocha Lopes, Felippe Martins Damaceno and Sergio Nascimento Duarte. (2024). ‘EVALUATION OF DEFORESTATION, CLIMATE CHANGE AND CO2 EMISSIONS IN THE AMAZON BIOME USING THE MORAN INDEX’. Journal of South American Earth Sciences. Elsevier BV, 143, pp. 105010–105010. doi: https://doi.org/10.1016/j.jsames.2024.105010.
+13. Teixeira, M., Machado, L. A. T., Franco, M. A. M., Paulo Artaxo, Calheiros, A., Corrêa, P. L. P., Shimbo, J. Z. and Rizzo, L. V. (2025). ‘Analyzing and Forecasting the Morphology of Amazon Deforestation’. Forest Ecology and Management, 586. doi: https://doi.org/10.2139/ssrn.5092417.
