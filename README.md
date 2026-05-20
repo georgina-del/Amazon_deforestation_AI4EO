@@ -94,9 +94,15 @@ $$NDVI = \frac{NIR - Red}{NIR + Red}$$
 
 EVI (Enhanced Vegetation Index) — preferred over NDVI in dense tropical forest where NDVI saturates
 
+$$EVI = 2.5 \times \frac{NIR - Red}{NIR + C1 \times Red - C2 \times Blue + L}$$
+
 SAVI (Soil Adjusted Vegetation Index) — reduces soil background effects in recently cleared areas
 
+$$SAVI = \frac{(NIR - Red)}{(NIR + Red + L)} \times (1+L)$$
+
 NDMI (Normalised Difference Moisture Index) — captures vegetation water content, distinguishing stressed or degraded forest from healthy canopy
+
+$$NDMI = \frac{NIR - SWIR}{NIR + SWIR}$$
 
 ​
 **Training Data Extraction**
