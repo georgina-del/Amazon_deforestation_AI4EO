@@ -4,6 +4,12 @@
 
 ## Project Overview
 
+
+## Connection to GEOL0069 course content
+- **Week 3:** Data acquisition via Google Earth Engine & Copernicus Sentinel-2 imagery
+- **Week 2 / Week 8:** Unsupervised ML (K-means), vegetation indices, silhouette analysis
+- The approach mirrors the Borneo forest loss methodology and extends it to the Amazon
+
 ## Background and Motivation 
 
 The Amazon rainforest is one of the most crucial biomes on the planet, often called the “lungs of the Earth” due to its ability to regulate Earth’s climate. The Amazon is a colossal 6.7 million square kilometres stretching across nine South American countries and is host to over 30,000 plants, it is the most diverse ecosystem on Earth (Ferreira, 2026). In addition to this, the Amazon is the biggest land sink of Carbon and is estimated to store 140 billion tonnes of carbon (Greenpeace, 2020). However, since the 1970s rapid land-use change has meant that deforestation has been occurring at accelerating rates in order to meet population demand, in 2019 alone there was a 34 % increase in forest clearing from the previous year (Santos et al., 2024 , Teixeira et al., 2025). Without proper policy it is estimated that deforestation could reach up to 50% of the 2050 (Borma, Nobre and Cardoso, 2013).  
