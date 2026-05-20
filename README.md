@@ -74,7 +74,7 @@ Brazil was selected as the study country as it contains the largest area of trop
 * Image 2 (Recent): 2024 dry season
 
 ![Rondonia Land Cover Change](images/Sentinel2_satellite_localitymap.jpeg)
-*Figure 1: *
+
 
 ## Methodology 
 
