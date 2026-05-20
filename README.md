@@ -135,7 +135,7 @@ Rondônia shows clear evidence of active deforestation between 2020 and 2024, wi
 * Mature plantation/degraded forest decreased by 42 % suggests land that was already used for agriculture may have been abandoned or reclassified.
 
 ![Rondonia Land Cover Change](images/rondonia_land_cover_change.png)
-*Figure 1: Land cover change analysis for Rondônia, Brazil (2020–2024)*
+
 
 
 **Para Results**
@@ -150,7 +150,7 @@ Pará tells a different story to Rondônia, rather than active clearing, the res
 * No primary forest cluster appears
 
 ![Para Land Cover Change](images/para_land_cover_change-2.png)
-*Figure 1: Land cover change analysis for Para, Brazil (2020–2024)*
+
 
 
 ## Environmental Impact Assesment 
