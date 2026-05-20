@@ -80,7 +80,7 @@ NDMI (Normalised Difference Moisture Index) — captures vegetation water conten
 
 The notebook utilizes an unsupervised machine learning algorithm called **"k-means clustering"** , this algorithm that groups data into K clusters by assigning unlabelled data points to the nearest centroid (cluster centre). Here we apply this to the four vegetation indices to classify land cover types without requiring labelled training data. 
 
-**Optimal cluster selection** was determined objectively using silhouette analysis, testing k = 5, 6 and 7 clusters. The silhouette score measures how similar each pixel is to its own cluster compared to neighbouring clusters, ranging from -1 to +1 where higher values indicate better-separated clusters. The k value producing the highest silhouette score was selected — k=7 for Rondônia (silhouette = 0.437) and k=5 for Pará (silhouette = 0.312).
+**Optimal cluster selection** was determined objectively using silhouette analysis, testing k = 5, 6 and 7 clusters. The silhouette score measures how similar each pixel is to its own cluster compared to neighbouring clusters, ranging from -1 to +1 where higher values indicate better-separated clusters. 
 
 **Temporal consistency** was ensured by training the K-means model exclusively on 2020 data and applying the same fitted model to both years. This is a critical methodological decision, if the model were retrained on 2024 data independently, the cluster boundaries would shift and any differences in pixel counts could reflect algorithmic variation rather than genuine land cover change. Therefore, all changes in pixel counts between years reflect real land cover transitions.
 
