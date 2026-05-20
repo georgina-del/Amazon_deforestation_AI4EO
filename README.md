@@ -1,5 +1,6 @@
 # Detection of Amazon Deforestation using K-Means Unsupervised Learning
 
+![Brazil Wildfire](images/Brazil_Wildfire.jpg)
 
 <details>
 <summary>Table of Contents</summary>
