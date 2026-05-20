@@ -42,6 +42,8 @@ The notebook automatically selects the least cloudy available image for each reg
 
 Brazil was selected as the study country as it contains the largest area of tropical rainforest in the world and has the highest absolute rates of deforestation globally, making it one of the largest national emitters of greenhouse gases from land use change (Santos et al., 2024; Ferreira, 2026).
 
+![Remote Sensing Technique](images/Remote_Sensing_Technique.png)
+
 **Sentinel-2 Satellite Images of Cacoal, Rondônia, Brazil**
 
 * Location: Central Rondônia deforestation hotspot
