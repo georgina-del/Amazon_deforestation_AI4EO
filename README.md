@@ -2,6 +2,15 @@
 
 ## Table of contents
 
+- [Project Overview](#project-overview)
+- [Background and Motivation](#background-and-motivation)
+- [Data Acquisition and Study Area](#data-acquisition-and-study-area)
+- [Methodology](#methodology)
+- [Results and Performance](#results-and-performance)
+- [Environmental Impact Assessment](#environmental-impact-assessment)
+- [Limitations](#limitations)
+- [Future Work](#future-work)
+- [References](#references)
 ## Project Overview
 
 This project applies K-means unsupervised machine learning to Sentinel-2 satellite imagery accessed via Google Earth Engine to detect and quantify deforestation across two Brazilian Amazon study regions between 2020 and 2024. Following the methodology developed in GEOL0069 AI for Earth Observation, the model is trained on 2020 baseline imagery and applied consistently to 2024 data, ensuring that changes in land cover classification reflect genuine deforestation rather than algorithmic variation. Four vegetation indices (NDVI, EVI, SAVI and NDMI) are used as input features, with silhouette analysis selecting the optimal number of clusters. 
@@ -139,7 +148,7 @@ Pará tells a different story to Rondônia, rather than active clearing, the res
 *Figure 1: Land cover change analysis for Para, Brazil (2020–2024)*
 
 
-## Environment Impact Assesment 
+## Environmental Impact Assesment 
 
 | Stage | Runtime | Energy (Wh) | CO₂e (g) | Notes |
 |---|---|---|---|---|
