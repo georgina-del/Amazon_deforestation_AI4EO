@@ -1,6 +1,8 @@
 # Detection of Amazon Deforestation using K-Means Unsupervised Learning
 
-## Table of contents
+
+<details>
+<summary>Table of Contents</summary>
 
 - [Project Overview](#project-overview)
 - [Background and Motivation](#background-and-motivation)
@@ -11,6 +13,9 @@
 - [Limitations](#limitations)
 - [Future Work](#future-work)
 - [References](#references)
+
+</details>
+
 ## Project Overview
 
 This project applies K-means unsupervised machine learning to Sentinel-2 satellite imagery accessed via Google Earth Engine to detect and quantify deforestation across two Brazilian Amazon study regions between 2020 and 2024. Following the methodology developed in GEOL0069 AI for Earth Observation, the model is trained on 2020 baseline imagery and applied consistently to 2024 data, ensuring that changes in land cover classification reflect genuine deforestation rather than algorithmic variation. Four vegetation indices (NDVI, EVI, SAVI and NDMI) are used as input features, with silhouette analysis selecting the optimal number of clusters. 
