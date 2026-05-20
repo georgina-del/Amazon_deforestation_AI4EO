@@ -108,6 +108,8 @@ The notebook utilizes an unsupervised machine learning algorithm called **"k-mea
 
 **Temporal consistency** was ensured by training the K-means model exclusively on 2020 data and applying the same fitted model to both years. This is a critical methodological decision, if the model were retrained on 2024 data independently, the cluster boundaries would shift and any differences in pixel counts could reflect algorithmic variation rather than genuine land cover change. Therefore, all changes in pixel counts between years reflect real land cover transitions.
 
+![K-Means](images/k-means.jpeg)
+
 **Land Cover Label Assignment**
 
 Land cover labels were assigned to clusters based on their centroid NDVI value using thresholds adapted from the course methodology (Tsamados and Chen, 2022).
