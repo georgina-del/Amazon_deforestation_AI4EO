@@ -209,6 +209,7 @@ Some ideas for future work to improve the model:
 * **Try alternative clustering algorithms** Gaussian Mixture Models would address the spherical cluster assumption by allowing clusters of different shapes and sizes.
 * **Multi-temporal compositing** using a seasonal median composite rather than a single image would reduce noise from atmospheric effects and produce more stable vegetation index values for clustering.
 
+### Video Link 
 
 [![Watch the video](https://img.youtube.com/vi/TU5gMliwcD4/maxresdefault.jpg)](https://youtu.be/TU5gMliwcD4)
 
