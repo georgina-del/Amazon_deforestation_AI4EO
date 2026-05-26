@@ -209,6 +209,9 @@ Some ideas for future work to improve the model:
 * **Try alternative clustering algorithms** Gaussian Mixture Models would address the spherical cluster assumption by allowing clusters of different shapes and sizes.
 * **Multi-temporal compositing** using a seasonal median composite rather than a single image would reduce noise from atmospheric effects and produce more stable vegetation index values for clustering.
 
+
+[![Watch the video](https://img.youtube.com/vi/TU5gMliwcD4/maxresdefault.jpg)](https://youtu.be/TU5gMliwcD4)
+
 ## References 
 
 1. Borma, L. S., Nobre, C. A. and Cardoso, M. F. (2013). ‘Response of the Amazon Tropical Forests to Deforestation, Climate, and Extremes, and the Occurrence of Drought and Fire’. Climate Vulnerability, 2, pp. 153–163. doi: https://doi.org/10.1016/b978-0-12-384703-4.00228-8.
